@@ -12,9 +12,9 @@ describe "Static pages" do
       page.should have_selector('h1', :string => 'Sample App')
     end
     
-    it "should have title 'Ruby on Rails Tutorial Sample App | Home'" do
+    it "should have title 'Ruby on Rails Tutorial Sample App'" do
       visit '/static_pages/home'
-      page.should have_selector('title', :string => "#{:base_title} | Home")
+      page.should have_selector('title', :string => "#{:base_title}")
     end
     
   end
