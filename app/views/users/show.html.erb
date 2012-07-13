@@ -3,7 +3,7 @@
   <aside class="span3">
     <section>
       <h1>
-        <%= gravatar_for @user %>
+        <%= gravatar_for @user, options = { size: 120 }%>
         <%= @user.name %>
       </h1>
     </section>
